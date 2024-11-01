@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+</head>
+<body>
+<h1>Profile</h1>
+<p id="profileDetails"></p>
+
+<script>
+  // Retrieve the values from sessionStorage
+  const username = sessionStorage.getItem('username');
+  const password = sessionStorage.getItem('password');
+
+  // Display the user details
+  document.getElementById('profileDetails').innerText = `Username: ${username}, Password: ${password}`;
+</script>
+</body>
+</html>
